@@ -1,6 +1,8 @@
 body{
     font-family: 'Open Sans';
     background-color: silver;
+    padding: 0;
+    margin: 0;
 }
 .announcments{
     background-color: white;
@@ -67,7 +69,7 @@ body{
     padding: 0px;
     font-size: 14px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     z-index: 2;
 }
@@ -98,6 +100,7 @@ body{
     margin: 0px;
 }
 .annoucment__card{
+    display: inline-block;
     border-bottom: 1px solid silver;
     border-radius: 3px;
     padding: 10px 40px 10px 15px;
@@ -150,14 +153,17 @@ body{
         width: 100%;       
     }
     .announcments__section{
-        margin: 0;
+        margin: 0px;
+    }
+    .annoucment__card{
+        margin: 0px 10%;
     }
     .article__cards .article__card{
         display: flex;
         flex-wrap: nowrap;
     }
     .article__cards .article__card .article__tag{
-        left: 150px;
+        left: 28%;
         top: 4px;
     }
     .articles__section{
@@ -204,5 +210,13 @@ body{
     }
     .big .article__card{
         display: unset;
+    }
+}
+@media screen and (max-width: 375px){
+    .announcments{
+        margin: 0;
+    }
+    .big .article__title{
+        font-size: 23px;
     }
 }
