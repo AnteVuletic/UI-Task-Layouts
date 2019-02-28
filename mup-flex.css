@@ -33,7 +33,11 @@ body{
     position: relative;
     width: 100%;
 }
-
+.annoucment__cards{
+    display: block;
+    height: 395px;
+    overflow-y: scroll;
+}
 .article__img{
     position: relative;
     padding-top: 75%;
@@ -100,7 +104,7 @@ body{
     margin: 0px;
 }
 .annoucment__card{
-    display: inline-block;
+    display: block;
     border-bottom: 1px solid silver;
     border-radius: 3px;
     padding: 10px 40px 10px 15px;
@@ -110,7 +114,6 @@ body{
     white-space: nowrap;
     border: none;
     border-radius: 5px;
-    font-size: 13px;
     font-weight: 700;
     color: #666667;
     letter-spacing: 1.25px;
@@ -138,8 +141,15 @@ body{
         width: 100%;
     }
     .announcments__section{
-        width: 100%;
+        width: 80%;
+        align-items: flex-start;
+        margin-left: 10%;
     }
+    .annoucment__expand{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 }
 @media screen and (max-width: 768px){
@@ -151,9 +161,6 @@ body{
     }
     .article__cards{
         width: 100%;       
-    }
-    .announcments__section{
-        margin: 0px;
     }
     .annoucment__card{
         margin: 0px 10%;
@@ -215,6 +222,10 @@ body{
 @media screen and (max-width: 375px){
     .announcments{
         margin: 0;
+    }
+    .announcments__section{
+        width: 90%;
+        margin-left: 5%;
     }
     .big .article__title{
         font-size: 23px;
