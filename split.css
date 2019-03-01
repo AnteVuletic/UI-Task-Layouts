@@ -80,3 +80,39 @@ body{
     font-weight: bold;
     margin: 2.5px;
 }
+@media screen and (max-width: 1024px){
+    .card__btn{
+        padding: 5px 5px;
+    }
+}
+@media screen and (max-width: 768px){
+    .navigation{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: repeat(4,250px);
+        grid-template-areas:
+        "cardsmart cardzivot"
+        "cardo cardsluzbeni "
+        "cardposlovno cardservisne "
+        "cardukljuci cardukljuci";
+    }
+    .navigation__card--ukljuci .card__description{
+        height: 33%;
+    }
+}
+@media screen and (max-width: 375px){
+    .navigation{
+        width: 95%;
+        grid-gap: 10px 0px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7,250px);
+        grid-template-areas:
+        "cardsmart"
+        "cardzivot"
+        "cardo"
+        "cardsluzbeni "
+        "cardposlovno"
+        "cardservisne"
+        "cardukljuci"
+        "cardukljuci";
+    }
+}
