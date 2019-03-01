@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navigation__card{
+    background-color: red;
+    position: relative;
+    display: block;
+    color: white;
+    border-radius: 5px;
+}
+.navigation__card--smart{
+    grid-area: cardsmart;
+}
+.navigation__card--zivot{
+    grid-area: cardzivot;
+}
+.navigation__card--o{
+    grid-area: cardo;
+}
+.navigation__card--poslovno{
+    grid-area: cardposlovno;
+}
+.navigation__card--sluzbeni{
+    grid-area: cardsluzbeni;
+}
+.navigation__card--servisne{
+    grid-area: cardservisne;
+}
+.navigation__card--ukljuci{
+    grid-area: cardukljuci;
+}
+.navigation__card--ukljuci .card__description{
+    height: 10%;
+}
+.navigation{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3,250px);
+    grid-template-areas:
+    "cardsmart cardzivot cardo"
+    "cardposlovno cardsluzbeni cardo"
+    "cardposlovno cardservisne cardukljuci";
+    grid-gap: 15px 15px;
+}
+.card__btn_wrapper{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}
+.card__description{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 33%;
+    overflow-y: hidden;
+    font-size: 15px;
+}
+.card__title{
+    display: block;
+    width: 90%;
+    margin: 25px auto;
+    padding: 0;
+    font-size: 28px;
+}
+.card__btn{
+    color: black;
+    padding: 10px 12.5px;
+    background-color: yellow;
+    outline: 0;
+    border-radius: 15px;
+    border-style: none;
+    font-weight: bold;
+    margin: 2.5px;
+}
